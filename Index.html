@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rahul Pal's Data Analytics portfolio showcasing skills, projects, and contact information.">
+  <title>Rahul Pal | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #121c30;
+      --panel2: #17243b;
+      --text: #e8eef8;
+      --muted: #a9b8ce;
+      --accent: #55d6be;
+      --accent2: #75a7ff;
+      --line: rgba(255,255,255,.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Inter, Segoe UI, Arial, sans-serif;
+      background: radial-gradient(circle at 85% 0%, #183456 0, transparent 34%), var(--bg);
+      color: var(--text); line-height: 1.65;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1080px, calc(100% - 36px)); margin: auto; }
+    header {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(16px);
+      background: rgba(11,17,32,.84); border-bottom: 1px solid var(--line);
+    }
+    nav { min-height: 70px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { font-weight: 800; letter-spacing: -.4px; font-size: 1.05rem; }
+    .brand span { color: var(--accent); }
+    .navlinks { display:flex; flex-wrap:wrap; gap:22px; color:var(--muted); font-size:.92rem; }
+    .navlinks a:hover { color:var(--accent); }
+    .hero { display:grid; grid-template-columns: 1.35fr .65fr; gap:40px; align-items:center; padding:86px 0 64px; }
+    .eyebrow { color:var(--accent); font-size:.82rem; font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-size:clamp(2.5rem, 6vw, 4.6rem); line-height:1.06; letter-spacing:-2px; margin:12px 0 18px; }
+    h1 span { color:var(--accent); }
+    .hero p { color:var(--muted); max-width:650px; font-size:1.08rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:11px 17px; border-radius:10px; font-weight:750; border:1px solid var(--line); }
+    .primary { background:var(--accent); color:#08131d; border-color:transparent; }
+    .secondary { background:rgba(255,255,255,.04); }
+    .profile { border:1px solid var(--line); background:linear-gradient(145deg,rgba(85,214,190,.12),rgba(117,167,255,.08)); border-radius:24px; padding:26px; box-shadow:0 20px 60px rgba(0,0,0,.22); }
+    .avatar { width:76px; height:76px; display:grid; place-items:center; border-radius:20px; background:var(--accent); color:#08131d; font-size:1.7rem; font-weight:900; }
+    .profile h2 { margin:16px 0 4px; }
+    .profile p { margin:0; font-size:.94rem; }
+    .profile .stat { display:flex; justify-content:space-between; gap:14px; padding:12px 0; border-top:1px solid var(--line); margin-top:14px; }
+    section.content { padding:35px 0; }
+    .section-head { margin-bottom:22px; }
+    .section-head h2 { font-size:clamp(1.7rem,4vw,2.3rem); margin:0 0 5px; letter-spacing:-.7px; }
+    .section-head p { color:var(--muted); margin:0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { border:1px solid var(--line); background:rgba(18,28,48,.86); border-radius:17px; padding:22px; }
+    .card h3 { margin:10px 0 8px; }
+    .card p { color:var(--muted); margin:0 0 14px; font-size:.95rem; }
+    .tag { display:inline-block; font-size:.76rem; font-weight:800; color:var(--accent); background:rgba(85,214,190,.10); border-radius:99px; padding:4px 9px; }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { padding:10px 14px; background:var(--panel2); border:1px solid var(--line); border-radius:10px; }
+    .timeline { border-left:2px solid var(--accent); padding-left:20px; }
+    .timeline h3 { margin:0 0 4px; }
+    .timeline p { margin:0; color:var(--muted); }
+    .contact { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    footer { margin-top:50px; border-top:1px solid var(--line); padding:24px 0; color:var(--muted); font-size:.9rem; }
+    @media (max-width:760px) {
+      .hero { grid-template-columns:1fr; padding:55px 0 35px; gap:24px; }
+      .grid { grid-template-columns:1fr; }
+      .contact { grid-template-columns:1fr; }
+      nav { align-items:flex-start; padding:15px 0; flex-direction:column; }
+      .navlinks { gap:14px; }
+      h1 { letter-spacing:-1px; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">RAHUL<span>.</span>PAL</a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="home">
+    <div>
+      <div class="eyebrow">Data Analytics Portfolio</div>
+      <h1>Turning data into <span>clear insights.</span></h1>
+      <p>Hi, I'm <strong>Rahul Pal</strong> — a B.Com graduate building practical skills in Data Analytics. I enjoy cleaning data, finding trends, and creating dashboards that help people make better decisions.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore My Projects ↘</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <aside class="profile">
+      <div class="avatar">RP</div>
+      <h2>Rahul Pal</h2>
+      <p>Junior Data Analyst · MIS Reporting</p>
+      <div class="stat"><span>Core tools</span><strong>Excel · SQL</strong></div>
+      <div class="stat"><span>Visualization</span><strong>Power BI</strong></div>
+      <div class="stat"><span>Programming</span><strong>Python</strong></div>
+    </aside>
+  </section>
+
+  <section class="content" id="about">
+    <div class="section-head"><h2>About Me</h2><p>A curious, detail-oriented learner who enjoys solving problems with data.</p></div>
+    <div class="card">
+      I have a commerce background and am developing my Data Analytics portfolio through hands-on projects. My focus is on organizing data, analyzing performance, and presenting useful findings through clear reports and dashboards.
+    </div>
+  </section>
+
+  <section class="content" id="skills">
+    <div class="section-head"><h2>Skills & Tools</h2><p>Tools I use for analysis, reporting, and visualization.</p></div>
+    <div class="skills">
+      <span class="skill">Microsoft Excel</span><span class="skill">SQL</span><span class="skill">Power BI</span><span class="skill">Python</span><span class="skill">Data Cleaning</span><span class="skill">Data Visualization</span><span class="skill">Dashboard Design</span><span class="skill">MIS Reporting</span><span class="skill">KPI Tracking</span>
+    </div>
+  </section>
+
+  <section class="content" id="projects">
+    <div class="section-head"><h2>Featured Projects</h2><p>Replace or update these descriptions to match your actual project files.</p></div>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Excel · Dashboard</span>
+        <h3>E-Commerce Sales Dashboard</h3>
+        <p>Explore sales, profit, product performance, and monthly trends using an interactive dashboard.</p>
+        <a href="#contact">Ask me about this project ↗</a>
+      </article>
+      <article class="card">
+        <span class="tag">Power BI · Reporting</span>
+        <h3>Business Performance Dashboard</h3>
+        <p>Summarize key performance indicators and turn business data into clear visual insights.</p>
+        <a href="#contact">Ask me about this project ↗</a>
+      </article>
+      <article class="card">
+        <span class="tag">Data Analysis</span>
+        <h3>COVID-19 Data Analysis</h3>
+        <p>Study case and recovery trends, compare time periods, and present key observations.</p>
+        <a href="#contact">Ask me about this project ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="content" id="education">
+    <div class="section-head"><h2>Education & Career Goal</h2><p>Building a strong foundation for an entry-level analytics role.</p></div>
+    <div class="card timeline">
+      <h3>B.Com — Lucknow University</h3>
+      <p>Commerce background with an interest in business reporting and data-driven decisions.</p>
+      <h3 style="margin-top:18px">Data Analytics Training</h3>
+      <p>Excel, SQL, Power BI, and Python. Add your institute and course completion date here.</p>
+      <h3 style="margin-top:18px">Career Goal</h3>
+      <p>Junior Data Analyst or MIS Executive — ready to learn, contribute, and grow.</p>
+    </div>
+  </section>
+
+  <section class="content" id="contact">
+    <div class="section-head"><h2>Let's Connect</h2><p>Update the example details below before publishing your portfolio.</p></div>
+    <div class="contact">
+      <div class="card"><h3>Email</h3><p>your-email@example.com</p></div>
+      <div class="card"><h3>GitHub & LinkedIn</h3><p>Add your real profile links here when ready.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Rahul Pal · Data Analytics Portfolio</div></footer>
+</body>
+</html>
